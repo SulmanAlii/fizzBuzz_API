@@ -16,6 +16,7 @@ app.get('/FizzBuzz', (req,res) => {
         res.send(resultsList.join('-'))
     } catch (error) {
         res.send('Error on get data');
+        console.log("Error on get data " + error);
     }
 });
 
