@@ -11,7 +11,7 @@ const startFizzBuzz = (randomNumber,LIMIT_NUMBER) => {
 
     try {
         
-        if (randomNumber > LIMIT_NUMBER) throw "El numero random incorrecto, porfavor intentalo de nuevo.";
+        if (randomNumber > LIMIT_NUMBER) throw "Random number is incorrect, please try again.";
 
         for (let index = randomNumber; index <= LIMIT_NUMBER; index++) {
 
@@ -37,12 +37,6 @@ const startFizzBuzz = (randomNumber,LIMIT_NUMBER) => {
     }
 }
 
-//call the method concurrently
-setInterval(() => {
-    for (let index = 0; index <= 100; index++) {
-    startFizzBuzz(randomNumber,LIMIT_NUMBER);
-    }
-}, 1000);
 
 
 startFizzBuzz(randomNumber,LIMIT_NUMBER);
